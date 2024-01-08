@@ -4,11 +4,13 @@ import {Routes, Route} from 'react-router-dom';
 import React, { Component } from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
+import Footer from './components/Footer';
 
 export default class App extends Component {
   c = 'John';
   render() {
     return (
+      <>
       <div>
         <Navbar/>
         {/* <News pageSize = {12} country="us" category="sports"/> */}
@@ -22,6 +24,8 @@ export default class App extends Component {
           <Route exact path="/technology" element={<News key="technology" pageSize = {12} country="us" category="technology"/>}/>
         </Routes>
       </div>
+      <Footer/>
+      </>
     )
   }
 }
