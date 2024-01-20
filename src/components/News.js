@@ -28,14 +28,16 @@ export class News extends Component {
     }
 
     async updateNews(){
+      this.props.setPrograss(10);
       const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=6389d6af32b0408c8c65427f0470f1cb&page=${this.state.page}&pageSize=${this.props.pageSize}`
         // this.setState({loading: true});
         let footer = document.querySelector(".footer");
         footer.style.position = "fixed";
         footer.style.bottom = "0";
         let data = await fetch(url);
-        
+        this.props.setPrograss(30);
         let parsedData = await data.json();
+        this.props.setPrograss(70);
         console.log(parsedData.totalResults);  
         this.setState({
           articles: parsedData.articles, 
@@ -43,6 +45,7 @@ export class News extends Component {
           loading: false
         })
         footer.style.position = "static";
+        this.props.setPrograss(100);
     }
 
     async componentDidMount(){
@@ -120,7 +123,7 @@ export class News extends Component {
         >
           <div className="container">
           
-        <div className="row">
+        <div className="row my-2">
         
         {/* {!this.state.loading && this.state.articles.map((element) => { */}
         {this.state.articles.map((element) => {
