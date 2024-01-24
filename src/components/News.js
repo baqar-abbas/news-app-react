@@ -71,7 +71,7 @@ export class News extends Component {
   render() {
     return (
       <>
-        <h1 className="heading" myStyle={{margin: "35px 0"}}>News App - Top Headlines</h1>
+        <h1 className="heading" style={{margin: "35px 0", marginTop:'60px'}}>News App - Top Headlines</h1>
         <h2 className='text-center'>{this.capitalize(this.props.category)}</h2>
         {this.state.loading && <Spinner/>}
         
