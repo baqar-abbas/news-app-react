@@ -39,7 +39,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Text Utility App] <a name="about-project"></a>
+# 📖 [News App] <a name="about-project"></a>
 
 > **[NEWS-APP]** News app is a react application which uses news api to fetch data from Apis and display news headlines and news details on the web app.
 
@@ -69,7 +69,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [Live Demo Link](Will be avalable soon)
+- [Live Demo & Project Presentation](https://drive.google.com/file/d/1Bl-vVDm3SY-U-3s8JhWGmJ2Kkcb2BwH0/view?usp=sharing)
 
 <!-- GETTING STARTED -->
 
